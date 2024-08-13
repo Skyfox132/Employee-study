@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 20px;
+color: white;
+
+}
+
+html, body, body > div {
+  height: 100%;
+}
+
+body {
+font-family: serif;
+background: #141414;
+}
+
+a {
+  text-decoration: none;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
