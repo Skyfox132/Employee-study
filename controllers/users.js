@@ -1,6 +1,6 @@
 const { prisma } = require('../prisma/prisma-client')
 const bcrypt = require('bcrypt')
-const { log } = require('debug/src/browser')
+// const { log } = require('debug/src/browser')
 const jwt = require('jsonwebtoken')
 
 
