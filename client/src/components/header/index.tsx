@@ -1,5 +1,5 @@
 import { Layout, Space, Typography, Button } from "antd"
-import { TeamOutlined } from "@ant-design/icons"
+import { TeamOutlined, UserOutlined, LoginOutlined} from "@ant-design/icons"
 import styles from "./index.module.css"
 import { CustomButton } from "../custom-button"
 import { Link } from "react-router-dom"
@@ -16,15 +16,15 @@ export const Header = () => {
                     </CustomButton>
                 </Link>
             </Space>
-            <Space>
+            <Space direction="horizontal">
                 <Link to={Paths.login}>
-                    <CustomButton type="default">
-                        <Typography.Title level={3}>Вхід</Typography.Title>
+                    <CustomButton type="ghost" icon= { <LoginOutlined />}>
+                        <Typography.Title level={4}>Вхід</Typography.Title>
                     </CustomButton>
                 </Link>
                 <Link to={Paths.register}>
-                    <CustomButton type="default">
-                        <Typography.Title level={3}>Рєстрація</Typography.Title>
+                    <CustomButton type="ghost" icon = { <UserOutlined /> } >
+                        <Typography.Title level={4}>Рєстрація</Typography.Title>
                     </CustomButton>
                 </Link>
             </Space>

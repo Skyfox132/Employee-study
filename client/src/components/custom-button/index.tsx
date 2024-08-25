@@ -1,10 +1,11 @@
 import { Button, Form } from "antd"
+import styles from "./index.module.css"
 
 type Props = {
     children: React.ReactNode,
     htmlType?: "button" | "submit" | "reset" | undefined,
     onClick?: () => void,
-    type?: "primary" | "link" | "text" | "default" | "dashed" | undefined,
+    type?: "link" | "default" | "primary" | "text" | "dashed" | "ghost" | undefined,
     danger?: boolean | undefined,
     loading?: boolean,
     shape?: "default" | "circle" | "round" | undefined,
@@ -24,7 +25,7 @@ export const CustomButton = ({
 
     return (
         <Form.Item>
-            <Button
+            <Button className={ styles.customBtn}
                 htmlType={htmlType}
                 type={type}
                 danger={danger}
